@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TitleTextStyle" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">#FF202E44</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/size_24_sp</item>
+    </style>
+    <style name="TempetureTextStyle" >
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/size_56_sp</item>
+    </style>
+    <style name="m_4_paragraph_flexo_demi_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="m_3_paragraph_flexo_bold_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textColor">#CDCDCD</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="m_3_paragraph_flexo_regular_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+    </style>
+</resources>

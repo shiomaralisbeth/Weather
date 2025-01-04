@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestLandGorilla</string>
+    <string name="weather_search_title">Clima</string>
+    <string name="detail_city_add_button">Agregar Ciudad</string>
+    <string name="weather_searcher_hint">Busca una ciudad</string>
+    <string name="weather_detail_today_label">DURANTE EL DÍA:</string>
+</resources>

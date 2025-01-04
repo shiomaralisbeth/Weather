@@ -1,0 +1,47 @@
+<vector xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android" android:alpha="0.09" android:height="700dp" android:viewportHeight="700" android:viewportWidth="1000" android:width="1000dp">
+      
+    <path android:fillColor="#FFFFFF" android:pathData="M1000,700l-1000,-0l0,-700l1000,0z"/>
+      
+    <path android:fillColor="#FFFFFF" android:pathData="M1000,700l-1000,-0l0,-700l1000,0z"/>
+      
+    <group>
+            
+        <clip-path android:pathData="M0,0h1000v700h-1000z"/>
+            
+        <path android:fillAlpha="0.71" android:pathData="M991.7,408.8l0,-46.7l-81.8,0l0,-50.2l-105.2,0l0,127.2l-24.4,0l0,29.7l-19.1,0l0,71.2l-22.3,0l0,-98l-55.3,0l0,-28.6l-31.4,0l0,45.8l-29.2,16l0,92.2l-69.1,0l0,-202.4l-74.4,0l0,37.9l-58.4,0l-15.9,8.7l0,21l-73.3,0l-13.8,7.6l0,71.2l-30.8,0l0,-109.7l-57.4,0l0,19.2l-90.9,0l0,46.4l-16.5,9l0,45.5l-27.4,0l0,-112.4l-37.2,-8.2l0,-30.3l-99.9,0l0,128.3l-8.9,0l0,273.5l80.3,0l65.8,0l186.1,0l0,-0.3l740.9,-0.5l0,-346.7z" android:strokeAlpha="0.71">
+                  
+            <aapt:attr name="android:fillColor">
+                        
+                <gradient android:endX="485.5" android:endY="312" android:startX="485.5" android:startY="773" android:type="linear">
+                              
+                    <item android:color="#FF403E40" android:offset="0"/>
+                              
+                    <item android:color="#FF4E4D4E" android:offset="0.1"/>
+                              
+                    <item android:color="#FF5A5A5A" android:offset="0.3"/>
+                              
+                    <item android:color="#FF626262" android:offset="0.5"/>
+                              
+                    <item android:color="#FF646464" android:offset="1"/>
+                            
+                </gradient>
+                      
+            </aapt:attr>
+                
+        </path>
+          
+    </group>
+      
+    <group>
+            
+        <clip-path android:pathData="M0,0h1000v700h-1000z"/>
+          
+    </group>
+      
+    <group>
+            
+        <clip-path android:pathData="M0,0h1000v700h-1000z"/>
+          
+    </group>
+    
+</vector>

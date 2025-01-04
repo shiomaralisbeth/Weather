@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/detailLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewDetail"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/detailWeatherCityTextView"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_40"
+            android:textSize="@dimen/size_36_sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:text="@string/weather_search_title" />
+
+        <TextView
+            android:id="@+id/detailWeatherMainTextView"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_18dp"
+            android:textColor="@color/onAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailWeatherCityTextView"
+            tool:text="@string/weather_search_title" />
+
+        <TextView
+            android:id="@+id/detailWeatherTempetureTextView"
+            style="@style/TempetureTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailWeatherMainTextView"
+            tool:text="24°" />
+
+        <ImageView
+            android:id="@+id/detailWeatherIconImageView"
+            android:layout_width="@dimen/size_56"
+            android:layout_height="@dimen/size_56"
+            android:layout_margin="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailWeatherTempetureTextView" />
+
+        <TextView
+            android:id="@+id/detailWeatherlblTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_24dp"
+            android:textColor="@color/onAccent"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_24_sp"
+            android:text="@string/weather_detail_today_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailWeatherIconImageView"
+            tool:text="Descripcion de clima diaria" />
+
+        <TextView
+            android:id="@+id/detailWeatherDescriptionTextView"
+            style="@style/m_3_paragraph_flexo_regular_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_12dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailWeatherlblTextView"
+            tool:text="Descripcion de clima diaria" />
+
+        <LinearLayout
+            android:id="@+id/detailWeatherRangeTempetureLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailWeatherDescriptionTextView">
+
+            <TextView
+                android:id="@+id/detailWeatherMinTempTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_24dp"
+                android:textColor="@color/white"
+                android:text="Mínimo: 200 °K" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:paddingVertical="@dimen/dimen_16dp"/>
+
+            <TextView
+                android:id="@+id/detailWeatherMaxTempTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_24dp"
+                android:textColor="@color/white"
+                android:text="Máximo: 317 °K" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/addCityButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_city_add_button"
+            android:paddingVertical="@dimen/dimen_16dp"
+            android:paddingHorizontal="@dimen/size_40"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailWeatherRangeTempetureLinearLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

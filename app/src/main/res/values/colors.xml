@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="onsurface_040">#f0f0f0</color>
+    <color name="onsurface_100">#dddddd</color>
+    <color name="onsurface_400">#bbbbbb</color>
+    <color name="onsurface_800">#838383</color>
+    <color name="onAccent">#4A5F9F</color>
+
+</resources>
